@@ -13,7 +13,7 @@
      http://www.apache.org/licenses/LICENSE-2.0
 
    This program is a drop-in replacement for GCC or clang. The most common way
-   of using it is to pass the path to afl-gcc or afl-clang via CC when invoking
+   of using it is to pass the path to rpcfl-gcc or rpcfl-clang via CC when invoking
    ./configure.
 
    (Of course, use CXX and point it to afl-g++ / afl-clang++ for C++ code.)
@@ -314,7 +314,7 @@ int main(int argc, char** argv) {
          "for gcc or clang, letting you recompile third-party code with the required\n"
          "runtime instrumentation. A common use pattern would be one of the following:\n\n"
 
-         "  CC=%s/afl-gcc ./configure\n"
+         "  CC=%s/rpcfl-gcc ./configure\n"
          "  CXX=%s/afl-g++ ./configure\n\n"
 
          "You can specify custom next-stage toolchain via AFL_CC, AFL_CXX, and AFL_AS.\n"
@@ -336,3 +336,4 @@ int main(int argc, char** argv) {
   return 0;
 
 }
+

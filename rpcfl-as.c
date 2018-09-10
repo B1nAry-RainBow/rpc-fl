@@ -35,7 +35,7 @@
 #include "debug.h"
 #include "alloc-inl.h"
 
-#include "afl-as.h"
+#include "rpcfl-as.h"
 
 #include <stdio.h>
 #include <unistd.h>
@@ -480,7 +480,7 @@ int main(int argc, char** argv) {
 
   if (isatty(2) && !getenv("AFL_QUIET")) {
 
-    SAYF(cCYA "afl-as " cBRI VERSION cRST " by <lcamtuf@google.com>\n");
+    SAYF(cCYA "rpcfl-as " cBRI VERSION cRST " by <lcamtuf@google.com>\n");
  
   } else be_quiet = 1;
 
@@ -546,4 +546,5 @@ int main(int argc, char** argv) {
   exit(WEXITSTATUS(status));
 
 }
+
 
